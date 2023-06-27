@@ -14,10 +14,9 @@ public class Main {
         
         System.out.println(diretor.toString());
         System.out.println("");
-        System.out.println(motoboy1.toString());
-        System.out.println("");
         diretor.admitir(motoboy1);
-        
+        System.out.println("");
+      
         
         
         

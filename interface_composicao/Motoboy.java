@@ -26,7 +26,7 @@ public class Motoboy extends Funcionario{
     //método abstrato
     @Override
     public double getSalarioFinal() {
-        return salarioBase; 
+        return super.salarioBase; 
    }
     
     
