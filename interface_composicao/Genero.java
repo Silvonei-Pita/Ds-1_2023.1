@@ -3,18 +3,25 @@ package interface_composicao;
 
 
 public enum Genero {
-    MASCULINO("Masculino"),
-    FEMININO("Feminino");
+    MASCULINO("Masculino", 'M'),
+    FEMININO("Feminino", 'F');
     
     private final String texto;
+    private final char caractere; 
 
-    private Genero(String texto) {
+    private Genero(String texto, char caractere) {
         this.texto = texto;
+        this.caractere = caractere;
     }
 
     public String getTexto() {
         return texto;
     }
+
+    public char getCaractere() {
+        return caractere;
+    }
+
     
     
     

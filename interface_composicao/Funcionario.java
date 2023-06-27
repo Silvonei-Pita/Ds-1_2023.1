@@ -28,12 +28,12 @@ public abstract class Funcionario implements SalarioFinal{
     public String toString() {
         return "Funcionario" + 
                "\nnome: " + nome + 
-               "\nData de Nascimento: " + dataNascimento + 
+               "\nData de Nascimento: " + Util.formatarData(dataNascimento) + 
                "\nIdade: " + getIdade() +
-               "\nGênero: " + genero + 
-               "\nSetor: " + setor + 
-               "\nSalário Base: " + salarioBase +
-               "\nSalário Final: " + getSalarioFinal();
+               "\nGênero: " + genero.getCaractere() + 
+               "\nSetor: " + setor.getNome() +
+               "\nSalário Base: " + Util.formatarMonetario(salarioBase)+
+               "\nSalário Final: " + Util.formatarMonetario(getSalarioFinal());
     }
     
 

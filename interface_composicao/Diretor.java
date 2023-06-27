@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class Diretor extends Funcionario implements Contratacao{
     //Atributos
-    private double PREMIO = 0.2;
+    private final double PREMIO = 0.2;
 
     
     //Construtor
@@ -31,6 +31,16 @@ public class Diretor extends Funcionario implements Contratacao{
         return salario_final;
     }
     
+    //E se eu tentar criar o objeto motoboy nessa parte aqui?
+    @Override
+    public void admitir(Funcionario funcionario) {
+        System.out.println(funcionario.nome + " Admitido. " + "Setor: " + funcionario.setor.getNome());
+    }
+
+    @Override
+    public void demitir(Funcionario funcionario) {
+        
+    }
  
 
     //Getters
@@ -38,15 +48,7 @@ public class Diretor extends Funcionario implements Contratacao{
         return PREMIO;
     }
 
-    @Override
-    public void admitir(Funcionario funcionario) {
-        System.out.println(funcionario.nome + " admitido." + " Setor: " + funcionario.setor);
-    }
-
-    @Override
-    public void demitir(Funcionario funcionario) {
-        
-    }
+    
 
 
 
