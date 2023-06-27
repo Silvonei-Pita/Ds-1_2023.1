@@ -26,17 +26,20 @@ public class Diretor extends Funcionario implements Contratacao{
     //Métodos 
     @Override
     public double getSalarioFinal() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       double salarioFinal = 0;
+       salarioFinal = super.salario * PREMIO;
+       salarioFinal += super.salario;
+       return salarioFinal;
     }
-
+    
     @Override
     public void admitir(Funcionario funcionario) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
     public void demitir(Funcionario funcionario) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     //Getters
